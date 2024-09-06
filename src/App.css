@@ -1,0 +1,614 @@
+.container {
+  min-width: 1440px;
+  padding: 20px 20px;
+}
+
+.nav {
+  display: flex;
+  padding: 20px 20px;
+  gap: 40px;
+}
+
+.nav a {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 15px;
+}
+
+.RecipesContainer {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.RecipesHeader {
+  padding: 20px 20px;
+  width: 1110px;
+  margin-bottom: 50px;
+}
+
+.RecipesContainer img {
+  max-width: 300px;
+  border: 3px solid #ffbf5c;
+  border-radius: 15px;
+  outline: 2px solid #faebb1;
+  outline-offset: 10px;
+}
+
+.ReciepsItems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.RecipesItem {
+  padding: 20px 20px;
+}
+
+.RecipesItem h2 {
+  color: #14213d;
+  margin-bottom: 25px;
+}
+
+.recipeContent {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.RecipesPagination {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.RecipesPagination a {
+  color: #bd9746;
+  background-color: #faebb1;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 2px solid #ffbf5c;
+  outline: 4px solid #faebb1;
+}
+
+.tags{
+  font-size: 16px;
+  font-weight: 500;
+  color: #9fa3a6;
+  margin-bottom: 10px;
+}
+
+.ingredients {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #ffbf5c;
+  border: 2px solid #ffbf5c;
+  color: #faebb1;
+}
+
+p {
+  color: #384558;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.ModalContent {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 90%;
+  width: 80%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #9fa3a6;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.closeBtn:hover {
+  background: #e5e5e5;
+}
+
+.ModalHero{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.ModalIngredients {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.ModalHero h2 {
+  margin-bottom: 20px;
+}
+
+.instructions {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.Details {
+  position: relative;
+  gap: 15px 15px;
+  width: 439px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  bottom: 96px;
+  left: 347px;
+}
+
+.Details h6 {
+  margin: 0 auto;
+  background-color: #ffbf5c;
+  color: #faebb1;
+  width: 220px;
+  padding: 4px 4px;
+  border-radius: 15px;
+  font-size: 15px;
+  text-align: center;
+  align-self: center;
+}
+
+.recipes-filter-container {
+  display: flex;
+  gap: 20px;
+}
+
+.recipes-filter-container select {
+  padding: 10px 15px;
+  border: 2px solid #ffbf5c;
+  color: #392e28;
+  border-radius: 8px;
+  background-color: #faebb1;
+}
+
+.recipes-filter-container option {
+  border: 2px solid #ffbf5c;
+  color: #392e28;
+  background-color: #faebb1;
+}
+
+.recipes-filter-container input {
+  padding: 10px 15px;
+  border: 2px solid #ffbf5c;
+  color: #392e28;
+  border-radius: 8px;
+  background-color: #faebb1;
+}
+
+.recipes-filter-container .filterBtn {
+  padding: 10px 15px;
+  border: 2px solid #ffbf5c;
+  color: #392e28;
+  border-radius: 8px;
+  background-color: #faebb1;
+}
+
+.recipes-filter-container .filterBtn:hover {
+  background-color: #ffbf5c;
+  color: #ffff;
+}
+
+/* products css */
+
+.ProductsContainer {
+  margin: 0 auto;
+  width: 1440px;
+  font-family: "Open Sans", sans-serif;
+  padding: 30px 50px;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductsHeader {
+  width: 1110px;
+  margin-bottom: 50px;
+}
+
+.Products-filter-container {
+  display: flex;
+  gap: 20px;
+}
+
+select {
+  padding: 10px 15px;
+  border: 2px solid #d5bdaf;
+  color: #392e28;
+  border-radius: 8px;
+  background-color: #f5ebe0;
+}
+
+option {
+  border: 2px solid #d5bdaf;
+  color: #392e28;
+  background-color: #f5ebe0;
+}
+
+.Products-filter-container input {
+  padding: 10px 15px;
+  border: 2px solid #d5bdaf;
+  color: #392e28;
+  border-radius: 8px;
+  background-color: #f5ebe0;
+}
+
+.filterBtn {
+  padding: 10px 15px;
+  border: 2px solid #d5bdaf;
+  color: #392e28;
+  border-radius: 8px;
+  background-color: #f5ebe0;
+}
+
+.productItems {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.productItem {
+  background-color: #edede9;
+  color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 15px;
+  border: 2px solid #edede9;
+  box-shadow: 2px 2px #edede9;
+  h4 {
+    font-size: 12px;
+  }
+  img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.ProductsPagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  gap: 8px;
+
+  a {
+    display: inline-block;
+    background-color: #dfc3aa;
+    color: white;
+    padding: 10px 16px;
+    font-weight: normal;
+  }
+
+  .activePage {
+    font-weight: bold;
+    color: #897462;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.ProductsmodalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.ProductsmodalContent {
+  background-color: #edede9;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  box-shadow: 8px 8px #d5bdaf;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.modalContent h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #d5bdaf;
+}
+
+.ProductsCloseButton {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #d5bdaf;
+  color: #f5ebe0;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.productItem {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.productItem:hover {
+  transform: scale(1.05);
+}
+
+.review {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review p {
+  margin-bottom: 8px;
+}
+
+.raiting {
+  background-color: #e3d5ca;
+  padding: 3px 5px;
+  border-radius: 8px;
+}
+
+.ProductsModalHero {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.ModalPrice {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #392e28;
+}
+
+.pagination a {
+  border-radius: 50%;
+  padding: 13px 20px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  background-color: #edede9;
+  color: #d5bdaf;
+}
+
+/* Post css */
+
+.postContainer {
+  background-color: #f4f4f9;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.postHeader {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post-filter-container input[type="text"] {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.post-filter-container .filterBtn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.post-filter-container .filterBtn:hover {
+  background-color: #0056b3;
+}
+
+.postItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.postItem {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.postItem:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.postItem h4 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.postItem div {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #007bff;
+  padding: 4px 8px;
+  margin: 0 5px 5px 0;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.PostPagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.PostPagination  li {
+  margin: 0 5px;
+}
+
+.PostPagination  a {
+  display: block;
+  padding: 8px 12px;
+  color: #007bff;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.PostPagination  a:hover,
+.pagination a.activePage {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.modalDialog {
+  margin: auto;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modalDialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.closeButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 14px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
+
+.closeButton:hover {
+  background-color: #cc0000;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #f4f4f9;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+.nav li:nth-child(1) a:hover {
+  text-decoration: underline;
+  color: #ffbf5c;
+}
+
+.nav li:nth-child(2) a:hover {
+  text-decoration: underline;
+  color: #897462;
+}
+
+.nav li:nth-child(3) a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+hr {
+  border: 1px solid rgb(195, 195, 195);
+}
